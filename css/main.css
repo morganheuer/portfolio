@@ -1,0 +1,313 @@
+/***** BASE STYLES *****/
+
+html {
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #e09f3e;
+}
+
+h1 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 2em;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+}
+
+h3 {
+  font-family: 'Libre Baskerville', serif;
+  text-align: center;
+  font-size: 1.5em;
+  margin: 60px 0;
+}
+
+p {
+  text-align: center;
+  line-height: 1.6;
+}
+
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
+.content-wrapper {
+  width: 90%;
+  padding: 60px 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  padding-top: 15px;
+}
+
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header nav {
+  width: 80%;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+header nav ul li {
+  color: #e09f3e;
+}
+
+.header-divider {
+  height: 1px;
+  width: 100%;
+  margin: 10px 0 20px 0;
+}
+
+.header-content span,
+.header-content i {
+  color: #e09f3e;
+}
+
+#about {
+  background: #e09f3e;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+#about .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+#headshot {
+  width: 60%;
+  border: 5px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me {
+  margin: 30px 0;
+  width: 90%;
+}
+
+
+#work {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.portfolio-item {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  margin: 30px 0;
+}
+
+.portfolio-item p {
+  width: 90%;
+}
+
+.thumbnail a {
+  filter: grayscale(10%);
+}
+
+.thumbnail a:hover {
+  filter: none;
+}
+
+.thumbnail img {
+  filter: grayscale(60%);
+}
+
+.thumbnail img:hover {
+  filter: none;
+}
+footer {
+  background: #e09f3e;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+
+footer .content-wrapper {
+  max-width: 900px;
+}
+.contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+footer p strong {
+  font-size: 1.35em;
+}
+
+footer a {
+  color: white;
+}
+
+.me p {
+  margin: 0;
+}
+
+.me {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  align-self: flex-start;
+}
+
+footer .social-icons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row;
+}
+
+footer .social-icons p {
+  margin: 0 15px;
+}
+
+footer .social-icons p i {
+  color: white;
+  font-size: 2em;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+  /*Tablet styles here*/
+
+  /* General styles */
+  .content-wrapper {
+    max-width: 1000px;
+  }
+
+  h1 {
+    font-size: 2.8em;
+    line-height: 1.4;
+  }
+
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.333;
+  }
+
+  h3 {
+    font-size: 2em;
+    line-height: 1.25;
+  }
+
+  header {
+    justify-content: space-around;
+    padding: 33px 0;
+  }
+
+  header .content-wrapper {
+    width: 90%;
+  }
+
+  .header-content {
+    width: 80%;
+    align-self: flex-start;
+  }
+
+  header nav {
+    width: 45%;
+    font-size: 1.2em;
+    align-self: flex-end;
+  }
+
+  header nav ul {
+    justify-content: space-around;
+  }
+
+  header nav ul li {
+  }
+
+  .header-divider {
+    margin: 30px 0;
+  }
+
+  .header-content {
+    padding: 0;
+  }
+
+  #headshot {
+    width: 50%;
+    padding: 0;
+  }
+
+  #about .content-wrapper {
+    width: 60%;
+  }
+
+  .portfolio-item {
+    width: 45%;
+    align-self: flex-start;
+    flex-grow: 1;
+    margin: 0 15px;
+  }
+
+  .thumbnail {
+    width: 100%;
+  }
+
+
+}
